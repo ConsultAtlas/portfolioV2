@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: "Arial", "Helvetica", sans-serif;
   margin: 0;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .nav ul {
   list-style-type: none;
-  font-family: 'Blanc-Medium';
+  font-family: "Arial", "Helvetica", sans-serif;
   margin-right: 10px;
 }
 
@@ -31,7 +31,7 @@ body {
   float: right;
 }
 
-.nav #logo {
+.nav .logo {
   color: black;
   float: left;
   font-size: 20px;
@@ -91,7 +91,7 @@ body {
 
 .about h2, .featured h2, .portfolio h2, .contact h2 {
   color: black;
-  font-family: "Blanc-Medium";
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 
 .about p, .contact p, .featured p, .portfolio-text p {
@@ -107,6 +107,7 @@ body {
   width: 100%;
   background-color: #eff8ff;
   text-align: center;
+    padding-bottom: 62px;
 }
 
 .featured {
@@ -195,10 +196,51 @@ body {
 		PORTFOLIO STYLES
 *******************************/
 
+.portfolio-wrapper {
+  width: 100%;
+  color: white;
+}
 
+.portfolio-text {
+  margin: 41px auto 78px;
+  color: black;
+  max-width: 750px;
+}
 
+.portfolio {
+  max-width: 840px;
+  text-align: center;
+}
 
+.portfolio img {
+  width: 100%;
+}
 
+/*******************************
+		CONTACT STYLES
+*******************************/
+
+.contact-wrapper {
+  width: 100%;
+  background-color: #eff8ff;
+}
+
+.contact p {
+  padding: 18px;
+}
+.contact {
+  height: 400px;
+  text-align: center;
+}
+.contact img {
+  display: inline-block;
+  height: 60px;
+  padding: 5px;
+}
+
+.contact-buttons {
+  padding: 15px;
+}
 
 /*******************************
 		HAMBURGER STYLES
@@ -230,7 +272,111 @@ body {
 	padding: 15px;
 }
 .hamburger-menu a {
-	font-family: 'Blanc-Medium';
+	font-family: "Arial", "Helvetica", sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+/*******************************
+		MEDIA QUERY STYLES
+*******************************/
+@media (max-width: 1139px) {
+	.featured-split-video, .featured-split-code {
+		width: 550px;
+	}
+	.featured-split-code {
+		margin-top: -9px;
+	}
+}
+
+@media (max-width: 540px) {
+	.header {
+		height: 300px;
+	}
+	.logo {
+		margin-left: -30px;
+	}
+	.about h2 {
+		clear: right;
+	}
+	.about img, .about h2 {
+		float: none;
+		text-align: center;
+	}
+	.about, .contact, .featured {
+		padding: 20px;
+	}
+	.about img {
+		margin-left: 15%;
+	}
+	.featured-split-video, .featured-split-code {
+	    width: 87%;
+	}
+	.iframe-video {
+		width: 100%;
+	}
+	.featured button {
+		padding: 14px 21px;
+		margin: 3px 6px;
+	}
+	.portfolio {
+		padding: 25px;
+	}
+	.menu {
+		display: none;
+	}
+	.hamburger-icon {
+		cursor: pointer;
+		display: block;
+		float: right;
+		margin: 5px 20px 0px 0px;
+	}
+	.contact {
+		height: 500px;
+	}
+	.contact-buttons {
+		padding: 21px 65px;
+	}
+}
+
+/* Phone 6 Plus*/
+@media (max-width: 414px) {
+	.contact-buttons :nth-child(2) {
+		margin-right: 115px;
+	}
+}
+
+/* iPhone 5 and iPhone 6 */
+@media (max-width: 375px) {
+	.contact-buttons {
+		padding: 15px 20px;
+	}
+	.about img {
+		margin-left: 13%;
+	}
+	.portfolio-text {
+		padding: 0 13px;
+	}
+	.portfolio {
+		padding: 5px;
+	}
+	.contact img {
+		height: 60px;
+	}
+	.contact-buttons :nth-child(2) {
+		margin-right: 108px;
+	}
+}
+@media (max-width: 320px) {
+	.about img {
+		margin-left: 5%;
+	}
+	.project {
+		width: 300px;
+		height: 300px;
+	}
+	.overlay h3 {
+		padding: 0 12px;
+		margin-top: -17px;
+	}
 }
