@@ -164,8 +164,37 @@ body {
 		CODEPEN STYLES
 *******************************/
 .code {
-  
+  width: 100;
+  max-width: 954px;
+  margin: auto;
+  display: none;
+  padding: 15px;
 }
+
+.code-button {
+  margin-top: 4px;
+  width: 231px;
+}
+
+.hide-button {
+  border: none;
+  background-color: #7c7e82;
+  color: white;
+  padding: 13px;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  letter-spacing: 0.2em;
+}
+
+.hide-button:hover {
+  background-color: #a7aaaf;
+}
+
+/*******************************
+		PORTFOLIO STYLES
+*******************************/
+
 
 
 
